@@ -1,0 +1,17 @@
+{
+  "name": "firestore-user-presence",
+  "version": "1.0.0",
+  "description": "Google Firestore user-presence setup files ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Google",
+    "Firestore",
+    "user",
+    "presence"
+  ],
+  "author": "jwjames",
+  "license": "GPL-3.0-or-later"
+}
