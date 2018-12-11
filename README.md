@@ -1,8 +1,8 @@
-[Possibly still in-progress, but it currently 100% works]
+**[Possibly still in-progress, but it currently 100% works]**
 
 Working files from an app I built that leverages Google Cloud Functions to connect a Firestore user collection to a separate Firebase collection, making use of Firebase's `onDisconnect` class.
 
-From the Google Firestore docs: 
+**From the Google Firestore docs:** 
 
 *Cloud Firestore doesn't natively support presence, but you can leverage other Firebase products to build a presence system.*
 
