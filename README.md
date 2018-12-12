@@ -6,7 +6,7 @@ Working files from an app I built that leverages Google Cloud Functions to conne
 
 You'll have to fill in the src/firebase.js config with your own information. 
 
-## DB architecture:
+## Google Cloud DB architecture:
 **Firestore:**
 - Collection name: `users`
 - Document: `[id of user]`
