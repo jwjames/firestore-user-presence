@@ -1,9 +1,8 @@
 import * as functions from 'firebase-functions';
-import * as admin from "firebase-admin";
+import * as admin from 'firebase-admin';
 
 admin.initializeApp();
 const firestore = admin.firestore();
-
 
 exports.onUserStatusChanged = functions.database
   .ref('/status/{uid}')
@@ -11,7 +10,7 @@ exports.onUserStatusChanged = functions.database
     const eventStatus = change.after.val();
     const userStatusFirestoreRef = firestore.doc(`users/${context.params.uid}`);
 
-    return change.after.ref.once('value').then((statusSnapshot) => {
+    return change.after.ref.once('value').then(statusSnapshot => {
       const status = statusSnapshot.val();
       console.log(status, eventStatus);
       if (status.last_changed > eventStatus.last_changed) {
@@ -23,8 +22,7 @@ exports.onUserStatusChanged = functions.database
           last_changed: eventStatus.last_changed,
           state: eventStatus.state
         }
-      }
+      };
       return userStatusFirestoreRef.set(newStatus, { merge: true });
-    })
-      
-});
+    });
+  });
