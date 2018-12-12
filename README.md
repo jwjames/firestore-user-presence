@@ -2,7 +2,9 @@
 
 # Firestore with Firebase User Presence 
 
-Working files from an app I built that leverages Google Cloud Functions to connect a Firestore user collection to a separate Firebase collection, making use of Firebase's `onDisconnect` class.
+Working files from an app I built that leverages Google Cloud Functions to connect a Firestore user collection to a separate Firebase collection, making use of Firebase's `onDisconnect` class. 
+
+You'll have to fill in the src/firebase.js config with your own information. 
 
 ## DB architecture:
 **Firestore:**
