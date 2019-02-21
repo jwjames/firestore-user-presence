@@ -32,7 +32,7 @@ export const rtdb_and_local_fs_presence = () => {
   };
 
   rtdb.ref('.info/connected').on('value', function(snapshot) {
-    if (snapshot.val() == false) {
+    if (snapshot.val() === false) {
       console.log('user is offline');
       userStatusFirestoreRef.set(isOfflineForFirestore, { merge: true });
       return;
